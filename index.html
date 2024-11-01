@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilos.css">
+    <title>Html, Css y Javascript</title>
+</head>
+<body>
+
+    <div id="contenedor">
+        <div id="uno" class="cajas columna1">
+            <h1>Método Map</h1>
+            <p id="pUno">El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
+            </p>
+            <h4>Arreglo de precios originales: </h4>
+            <p id="pDos" class="parrafoDos"></p>
+        </div>
+        
+        <div id="dos" class="cajas columna2">
+            <h1>Método filter</h1>
+            <p id="pUnoFil">El método filter() crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.</p>
+            <h4>Arreglos originales a filtrar:</h4>
+            <p id="pDosFil" class="parrafoDos"></p>
+        </div>
+        <div id="tres" class="cajas columna3">
+            <h1>Método reduce</h1>
+            <p>El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.</p>
+            <h4>Arreglo original a reducir: </h4>
+            <p id="pDosReduce" class="parrafoDos"></p>
+        </div>
+    </div>
+    <div id="contenedor2">
+        <div class="cajas columna1 botones">
+            <button onclick="aplicarAumento()">Aplicar I.V.A</button>
+        </div>
+        <div class="cajas columna2 botones">
+            <button onclick="filtrar()">Filtrar datos</button>
+        </div>
+        <div class="cajas columna3 botones">
+            <button onclick="reduce()">Reducir </button>
+        </div>
+    </div>
+    <div id="contenedor3">
+        <div id="ResultadoMap" class="cajas columna1">
+            <h4>Arreglos de precios con 21% de I.V.A: </h4>
+            <p id="pResuktadoMap" class="parrafoDos"></p>
+        </div>
+        <div id="ResultadoFilter" class="cajas columna2">
+            <h4>Resultado de el método o función filter:</h4>
+            <p id="pResultadoFilter" class="parrafoDos"></p>
+
+        </div>
+        <div id="ResultadoReduce" class="cajas columna3">
+            <h4>Resultado de arreglo reducido mediante método reduce: </h4>
+            <p id="pResultadoReduce" class="parrafoDos"></p>
+        </div>
+    </div>
+
+    <script src="script/srcript.js"></script>
+</body>
+</html>
